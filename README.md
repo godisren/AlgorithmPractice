@@ -1,1 +1,1 @@
-"# AlgorithmPractice" 
+# Algorithm Practice
