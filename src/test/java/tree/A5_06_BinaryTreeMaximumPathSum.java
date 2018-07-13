@@ -1,3 +1,4 @@
+package tree;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -131,9 +132,10 @@ public class A5_06_BinaryTreeMaximumPathSum {
 		
 		private int depthSum(TreeNode node){
 			if(node == null) return 0;
-			
 			int leftVal = depthSum(node.left);
 			int rightVal = depthSum(node.right);
+			
+			System.out.println("cur:"+node.val);
 			maxSum = Math.max(maxSum, node.val + leftVal + rightVal);
 			
 			int result = node.val + Math.max(leftVal , rightVal);
